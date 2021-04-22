@@ -1,12 +1,6 @@
 # autoSudoku
 Solves sudoku puzzles. 
 
-Project will be able to simulate the game of sudoku implementing 
-a 2D array as our main data structure. Will be divided into two 
-different classes. One to simulate our game of sudoku and another
-class to solve it.
-
-Our 2D array named sudokuBoard will hold initialized values on fixed
-positions in the array to simulate a certain puzzle.
-
-Solver 
+Project is to simulate the game of sudoku and then be able to output a solution to the puzzle.
+Project will be implementing 2D Arrays to simulate the game. Program will traverse our array, 
+attempting to find solutions at every index of our array.
