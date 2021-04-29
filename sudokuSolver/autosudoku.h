@@ -31,6 +31,8 @@ public:
 	~autoSudoku();
 
 	//Member Functions
+
+	
 		
 	//Prints Board
 	void print();
@@ -43,6 +45,20 @@ private:
 	//Holds size of our board
 	int boardSize;
 
+	//Private member functions(functions only the class needs not the user)
+
+	//Funtions to implement the 3 rules of sudoku
+
+	// 1. No duplicates in rows
+	bool rowCheck(int val, int column);
+	// 2. No duplicates in columns
+	bool columnCheck(int val, int row);
+	// 3. No duplicates in specific 3x3 boxes
+	bool boxCheck(int val, int row, int column);
+
+	//Helper function needed by boxCheck to adjust the index of row or column to
+	//be set to the origin of the 3x3 box to only check a specific box
+	int startingPos(int index);
 };
 
 #endif // !autoSudoku
