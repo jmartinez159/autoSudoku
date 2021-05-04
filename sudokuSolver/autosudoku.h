@@ -32,7 +32,11 @@ public:
 
 	//Member Functions
 
-	
+	void setValue(int val, int row, int col);
+
+	void solveIt();
+
+	bool isSolved();
 		
 	//Prints Board
 	void print();
@@ -59,6 +63,9 @@ private:
 	//Helper function needed by boxCheck to adjust the index of row or column to
 	//be set to the origin of the 3x3 box to only check a specific box
 	int startingPos(int index);
+
+	//This function checks that the value at the indexes to make sure it is valid for input
+	bool validateInput(int val, int row, int col);
 };
 
 #endif // !autoSudoku
